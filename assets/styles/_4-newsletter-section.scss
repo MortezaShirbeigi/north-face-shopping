@@ -1,0 +1,44 @@
+// Start newsletter section
+
+.newsletter__section--bg {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/Newsletter.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  .newsletter__section--title {
+    font-size: 2.1875rem;
+    font-weight: 600;
+  }
+  .newsletter__section--subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+    text-shadow: 0 0 3rem rgba(255, 255, 255, 1);
+  }
+  .subscribe__form {
+    .subscribe__form--input {
+      padding: 1.8rem 2.2rem;
+      outline: none;
+      &::placeholder {
+        font-size: 0.875rem;
+        font-weight: 600;
+      }
+      &:focus {
+        outline: none;
+        box-shadow: none;
+        border: 0.05rem solid #000;
+      }
+    }
+    .subscribe__form--button {
+      padding: 1rem 2.2rem;
+      font-size: 0.875rem;
+      transition: all 0.3s;
+      &:hover {
+        padding: 1rem 2.8rem;
+        transition: all 0.3s;
+      }
+    }
+  }
+}
