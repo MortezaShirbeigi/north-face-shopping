@@ -1,0 +1,30 @@
+{
+  "name": "my-bootstrap",
+  "version": "1.0.0",
+  "description": "modified bootstrap for north face shopping with cart and save cart item to local storage",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch assets/styles/main.scss:assets/styles/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MortezaShirbeigi/north-face-shopping.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "scss",
+    "bootstrap",
+    "javascript"
+  ],
+  "author": "Morteza Shirbeigi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MortezaShirbeigi/north-face-shopping/issues"
+  },
+  "homepage": "https://github.com/MortezaShirbeigi/north-face-shopping#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "font-awesome": "^4.7.0"
+  }
+}
