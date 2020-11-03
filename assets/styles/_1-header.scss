@@ -1,0 +1,131 @@
+/******** Start top navbar Style ********/
+
+// Start main style
+header {
+  background: rgba(0, 0, 0, 0.8);
+  .navbar {
+    font-weight: bold;
+  }
+  .transparent-navbar {
+    background: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    background: none;
+    .nav-link {
+      color: map-get($theme-colors, primary) !important;
+      margin-right: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+}
+// Start main style
+
+// Start nav top item animation
+
+.nav-item-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(0.0625rem) translateZ(0);
+  transform: perspective(0.0625rem) translateZ(0);
+  box-shadow: 0 0 0.0625rem rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background-color: #000;
+    height: 0.25rem;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  &:hover::before,
+  &:focus::before,
+  &:active::before {
+    left: 0;
+    right: 0;
+  }
+}
+
+// Start nav top item animation
+
+// Start cart button top animation
+
+.cart__button {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(0.0625rem) translateZ(0);
+  transform: perspective(0.0625rem) translateZ(0);
+  box-shadow: 0 0 0.0625rem rgba(0, 0, 0, 0);
+  font-weight: 600;
+  &:focus {
+    box-shadow: none;
+  }
+  .cart__button--hover {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  &:hover .cart__button--hover,
+  &:focus .cart__button--hover,
+  &:active .cart__button--hover {
+    opacity: 0;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-animation-name: cart__button;
+    animation-name: cart__button;
+    -webkit-animation-duration: 0.2s;
+    animation-duration: 0.2s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    animation-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+}
+
+@-webkit-keyframes cart__button {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  51%,
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes cart__button {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  21%,
+  100% {
+    opacity: 1;
+  }
+}
+
+// End cart button top animation
+
+/******** End top navbar Style ********/

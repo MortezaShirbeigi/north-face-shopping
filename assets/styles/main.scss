@@ -4,6 +4,9 @@ $theme-colors: (
   "light": #fff,
 );
 
+$navbar-light-color: map-get($theme-colors, light);
+$navbar-light-hover-color: map-get($theme-colors, light);
+
 //Start require for loading bootstrap styles
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
@@ -23,6 +26,13 @@ $theme-colors: (
 @import "../../node_modules/bootstrap/scss/buttons";
 // End optional bootstrap element use
 
+// Start my style from other files
+@import "../styles/1-header";
+@import "../styles/2-top-section";
+// Start my style from other files
+
+// Start main styles
+
 body {
   box-sizing: border-box;
   padding: 0;
@@ -30,3 +40,5 @@ body {
   font-family: "Montserrat";
   font-weight: 700;
 }
+
+// End main styles

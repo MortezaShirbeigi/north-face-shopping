@@ -1,0 +1,98 @@
+// Start top section (parallax) Style
+
+.top-section {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sky {
+  z-index: -7;
+  background: url("../images/sky.png");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+
+.clouds1 {
+  z-index: -6;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("../images/clouds1.png") no-repeat;
+  background-size: cover;
+  top: 0;
+}
+
+.mountains {
+  z-index: -5;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("../images/mountain.png") no-repeat;
+  background-size: cover;
+  background-position: 40%;
+  top: 1.25rem;
+}
+
+.logo {
+  z-index: -4;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("../images/logo.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  top: -8.125rem;
+}
+
+.clouds2 {
+  z-index: -3;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("../images/clouds2.png") no-repeat;
+  background-size: cover;
+  background-position: right;
+  top: 18.125rem;
+}
+
+.climber {
+  z-index: -2;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("../images/Climber.png") no-repeat;
+  background-size: cover;
+  top: 10rem;
+  background-position: 10%;
+}
+
+.clouds-final {
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background: url("../images/cloudsfinal.png") no-repeat;
+  // background-position: top;
+  background-size: cover;
+  top: 70%;
+}
+
+@media (min-width: 576px) {
+  .logo {
+    top: 0;
+  }
+  .climber {
+    top: 5rem;
+  }
+}
+
+// End top section (parallax) Style
