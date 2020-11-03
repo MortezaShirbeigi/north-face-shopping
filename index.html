@@ -73,6 +73,40 @@
                   Cart
                   <i class="fa fa-shopping-cart pl-2 cart__button--hover"></i>
                 </button>
+                <button class="btn cart__button--fixed hideBtn" type="button">
+                  <i class="fa fa-shopping-cart"></i>
+                </button>
+                <div class="shopping__cart">
+                  <div class="row border-bottom pb-3">
+                    <div class="col-6">
+                      <div class="shopping__cart--heading">
+                        <i class="fa fa-shopping-cart d-inline"></i>
+                        <h5 class="d-inline">Shopping Cart</h5>
+                      </div>
+                    </div>
+                    <div class="col-6 text-right">
+                      <a class="shopping__cart--close" href="#"
+                        ><i class="fa fa-times close-shopping-cart"></i
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <table class="table shopping__cart--table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Product</th>
+                          <th scope="col">Price</th>
+                          <th scope="col">QTY</th>
+                          <th scope="col">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody class="shopping__cart--content"></tbody>
+                    </table>
+                    <button class="btn btn-block clear__cart">
+                      Clear Cart
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </nav>
