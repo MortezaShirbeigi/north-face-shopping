@@ -7511,6 +7511,38 @@ header .transparent-navbar {
   transition: all 0.3s;
 }
 
+.social-media__btn {
+  background-color: #000000;
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.8rem;
+}
+.social-media__btn:hover {
+  background-color: #de1325;
+  text-decoration: none;
+}
+.social-media__btn .fa {
+  font-size: 1.875rem;
+}
+
+.footer__nav .nav-link {
+  font-size: 1.1rem;
+}
+.footer__nav .nav-link:hover {
+  color: #de1325;
+}
+
+.license a {
+  font-size: 1rem;
+}
+.license a:hover {
+  text-decoration: none;
+  color: #de1325;
+}
+
 body {
   box-sizing: border-box;
   padding: 0;

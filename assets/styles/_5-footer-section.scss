@@ -1,0 +1,38 @@
+// Start footer section style
+
+.social-media__btn {
+  background-color: map-get($theme-colors, primary);
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.8rem;
+  &:hover {
+    background-color: map-get($theme-colors, secondary);
+    text-decoration: none;
+  }
+  .fa {
+    font-size: 1.875rem;
+  }
+}
+.footer__nav {
+  .nav-link {
+    font-size: 1.1rem;
+    &:hover {
+      color: map-get($theme-colors, secondary);
+    }
+  }
+}
+
+.license {
+  a {
+    font-size: 1rem;
+    &:hover {
+      text-decoration: none;
+      color: map-get($theme-colors, secondary);
+    }
+  }
+}
+
+// End footer section style
