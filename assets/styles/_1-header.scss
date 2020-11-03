@@ -137,6 +137,7 @@ header {
 }
 
 .cart__button--fixed {
+  z-index: 99999999;
   position: fixed;
   bottom: 1.875rem;
   left: 1.875rem;
